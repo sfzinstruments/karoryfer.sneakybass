@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<Key>0C91284DCF7A1A5B51F672306BDF28DA7B76F3B657A8CCBD00AFE432771BEB8ED0665D656A16C41EC570FB9F8243377A6BE991ED68D3A5FCD5C5A021F4159B8CF53E20974BD0131E7BE5062080785AEDFDCF85969E18B53683F45D8C44A9A593566300444F19798FAB0431FAC6313B83F27AAE26CBED1C75FB3F221E8567A837BB6C08A8219EB7494317209D7FD87DBE5CAAF4960B83D9778DA655E1AEC2EC3D67EA5B9A0878E64F1FDE927BD34DEBF9D57F31CA9F3B7D622D653A697D5251E7132DB55B297A88FCC0B40B09851511DF73B7B7BCAE6494C6046D515ED9FB5B17B343EB587221B0263213EC7C904AAF61B540A7FDF5FCE21676925036E366435D</Key>
+<AriaBank id="2565" name="Sneakybass" vendor="Karoryfer" product="Sneakybass" version="1000" >
+
+	<Define name="$sample_dir" value="../Samples"/>
+
+	<!-- branding for Aria Player and sforzando UIs -->
+	<AriaGUI path="GUI/aria_info.xml"  target="*ARIA_INFO" />
+
+	<!-- main patches -->   
+	<AriaProgram  name="01 - Sneakybass Keyswitch" gui="GUI/01-sneakybass_keyswitch.xml"> <AriaElement path="Programs/01-sneakybass_keyswitch.sfz"/> </AriaProgram>
+	<AriaProgram  name="02 - Sneakybass Pluck" gui="GUI/02-sneakybass_pluck.xml"> <AriaElement path="Programs/02-sneakybass_pluck.sfz"/> </AriaProgram>
+	<AriaProgram  name="03 - Sneakybass Ghost" gui="GUI/03-sneakybass_ghost.xml"> <AriaElement path="Programs/03-sneakybass_ghost.sfz"/> </AriaProgram>
+	<AriaProgram  name="04 - Sneakybass Mute" gui="GUI/04-sneakybass_mute.xml"> <AriaElement path="Programs/04-sneakybass_mute.sfz"/> </AriaProgram>
+	<AriaProgram  name="05 - Sneakybass Fingering Noise" gui="GUI/05-sneakybass_fingering_noise.xml"> <AriaElement path="Programs/05-sneakybass_fingering_noise.sfz"/> </AriaProgram>
+	<AriaProgram  name="06 - Sneakybass Release Noise" gui="GUI/06-sneakybass_release_noise.xml"> <AriaElement path="Programs/06-sneakybass_release_noise.sfz"/> </AriaProgram>
+	
+</AriaBank>

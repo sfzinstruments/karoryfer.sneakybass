@@ -1,0 +1,66 @@
+<GUI w="775" h="335">
+
+	<!-- Pizz detuned bass version of strings GUI -->
+ 
+	<!-- Background -->
+
+	<StaticImage x="0" y="0" w="773" h="333" image="control_tab.png" transparent="0"  />
+	
+
+
+
+
+
+	<StaticText x="120" y="85" w="52" h="18" text="Mono" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<OnOffButton param="105" x="131" y="105" w="30" h="30" image="button.png" />
+
+	<StaticText x="120" y="135" w="52" h="18" text="Width" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Knob param="31" x="131" y="155" image="knob.png" frames="128"  />
+
+	<StaticText x="200" y="85" w="52" h="18" text="Unison" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Knob param="100" x="211" y="105" image="knob.png" frames="128"  />
+
+	<StaticText x="200" y="135" w="52" h="18" text="Width" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Knob param="101" x="211" y="155" image="knob.png" frames="128"  />
+
+	<StaticText x="280" y="85" w="52" h="18" text="Mute" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Knob param="70" x="291" y="105" image="knob.png" frames="128"  />
+
+	<StaticText x="280" y="135" w="52" h="18" text="Releases" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Knob param="107" x="291" y="155" image="knob.png" frames="128"  />
+
+
+
+
+	<StaticText x="360" y="35" w="52" h="18" text="Depth" color_text="#F3EFE9FF" transparent="1"   />
+
+<Slider param="21"   x="380"  y="60"  w="12" h="133" orientation="vertical"    image_handle="fader_vert.png" image_bg="fader_vert_slot.png"  />
+
+	<StaticText x="440" y="35" w="52" h="18" text="Rate" color_text="#F3EFE9FF" transparent="1"   />
+
+<Slider param="112"   x="460"  y="60"  w="12" h="133" orientation="vertical"    image_handle="fader_vert.png" image_bg="fader_vert_slot.png"  />
+
+
+	<StaticText x="520" y="15" w="52" h="18" text="VIBRATO" color_text="#F3EFE9FF" transparent="1"   />
+
+	<StaticText x="520" y="35" w="52" h="18" text="Delay" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Slider param="115" x="540" y="60" w="12" h="133" orientation="vertical"    image_handle="fader_vert.png" image_bg="fader_vert_slot.png"  />
+
+
+	<StaticText x="600" y="35" w="52" h="18" text="Fade" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Slider param="116" x="620" y="60" w="12" h="133" orientation="vertical"    image_handle="fader_vert.png" image_bg="fader_vert_slot.png"  />
+
+	<StaticText x="680" y="35" w="52" h="18" text="Humanize" color_text="#F3EFE9FF" transparent="1"   />
+	
+	<Slider param="117" x="700" y="60" w="12" h="133" orientation="vertical"    image_handle="fader_vert.png" image_bg="fader_vert_slot.png"  />
+
+
+</GUI>                                                                                                                                       

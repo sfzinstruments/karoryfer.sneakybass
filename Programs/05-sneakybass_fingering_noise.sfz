@@ -1,0 +1,132 @@
+
+<control>
+label_cc21=Vibrato Depth
+label_cc31=Width
+label_cc70=Mute
+label_cc100=Unison Vol
+label_cc101=Unison Width
+label_cc105=Mono Switch
+label_cc107=Release Noise
+label_cc112=Vibrato Speed
+label_cc115=Vibrato Delay
+label_cc116=Vibrato Fade
+label_cc117=Humanize
+
+set_cc1=100
+set_cc31=127
+set_cc101=127
+set_cc112=50
+set_cc115=45
+set_cc116=45
+set_cc117=0
+
+
+<global>
+#include "modules/controls/common.sfz"
+#include "modules/controls/env.sfz"
+
+//Center voice
+//Poly
+
+<master>
+hicc105=63
+#include "modules/controls/sneakybass_vibrato.sfz"
+
+<group>
+#include "modules/maps/sneakybass_finger_map.sfz"
+
+
+//Center voice
+//Mono
+
+<master>
+locc105=64
+group=1
+off_by=1
+#include "modules/controls/sneakybass_vibrato.sfz"
+
+<group>
+#include "modules/maps/sneakybass_finger_map.sfz"
+
+
+//Left voice
+//Poly
+
+<master>
+hicc105=63
+locc100=1
+amplitude_cc100=100
+pan_cc101=-100
+fil_type=hpf_2p
+cutoff=250
+#include "modules/controls/sneakybass_t1_vibrato.sfz"
+
+<group>
+#include "modules/maps/t1/sneakybass_finger_map.sfz"
+
+
+//Left voice
+//Mono
+
+<master>
+locc105=64
+group=2
+off_by=2
+locc100=1
+amplitude_cc100=100
+pan_cc101=-100
+fil_type=hpf_2p
+cutoff=250
+#include "modules/controls/sneakybass_t1_vibrato.sfz"
+
+<group>
+#include "modules/maps/t1/sneakybass_finger_map.sfz"
+
+
+//Right voice
+//Poly
+
+<master>
+hicc105=63
+locc100=1
+amplitude_cc100=100
+pan_cc101=100
+fil_type=hpf_2p
+cutoff=250
+#include "modules/controls/sneakybass_t2_vibrato.sfz"
+
+<group>
+#include "modules/maps/t2/sneakybass_finger_map.sfz"
+
+
+//Right voice
+//Mono
+
+<master>
+locc105=64
+group=3
+off_by=3
+locc100=1
+amplitude_cc100=100
+pan_cc101=100
+fil_type=hpf_2p
+cutoff=250
+#include "modules/controls/sneakybass_t2_vibrato.sfz"
+
+<group>
+#include "modules/maps/t2/sneakybass_finger_map.sfz"
+
+
+//Relase noises for center voice only, as noises
+<master>
+locc107=1
+amplitude_oncc107=100
+trigger=release_key
+group=7 //Needed for the below statement to not throw errors
+note_polyphony=1 //Prevent multiple triggering when unison is on
+
+<group>
+#include "modules/maps/t2/sneakybass_noise_map.sfz"
+
+//Muting curves
+#include "modules/controls/curves.sfz"
